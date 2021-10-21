@@ -1,0 +1,150 @@
+/*FOOTER Y HEADER*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo{
+    width: 20%;
+}
+
+.nav{
+    background-color: #FFB2B2; 
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+}
+.navegation{
+    padding: 15px;
+}
+.navegation a{
+    color: black;
+    font-size: 1.5em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.navegation a:hover{
+    color: white;
+}
+
+.pie-1{
+    background-color:#CCCCCC;
+    display: flex;
+    justify-content:space-around;
+}
+
+.pie-2{
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+.pie-2 p{
+    color: white;
+    padding: 8px;
+}
+
+.sec{
+    padding: 30px;
+}
+
+.sec p{
+    padding-bottom: 7px;
+    font-weight: bold;
+}
+
+#nav-pie a{
+    color: black;
+}
+
+#nav-pie a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+.pie-1 li{
+    padding-bottom: 4px ;
+}
+
+
+/* SECTION */
+
+section{
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 45px;
+    padding-bottom: 25px;
+}
+
+section ul{
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold; 
+    font-size: 20px;
+}
+
+p{
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .navegacion{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .pie-1{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mapa iframe{
+        padding: 10px;
+        width: 95%;
+        height: 95%;
+    }
+    
+}
+
+@media screen and (min-width: 640px) and (max-width: 1280px) {
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;    
+    }
+
+    .mapa iframe{
+        padding: 10px;
+        width: 90%;
+    }
+}
